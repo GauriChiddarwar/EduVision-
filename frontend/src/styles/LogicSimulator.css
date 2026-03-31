@@ -1,0 +1,21 @@
+.logic-page {
+  padding: 30px;
+  text-align: center;
+}
+
+.toggle-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}

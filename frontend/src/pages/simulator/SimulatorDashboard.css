@@ -1,0 +1,24 @@
+.dashboard-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard-card {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dashboard-card:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}

@@ -1,0 +1,62 @@
+.cp-unit1-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+.cp-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cp-tabs button {
+  flex: 1;
+  min-width: 150px;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #22c55e, #15803d);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cp-content {
+  background: #f9fafb;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.cp-list {
+  margin-left: 20px;
+}
+
+.cp-note {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.cp-box {
+  background: #dcfce7;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.cp-flow span {
+  padding: 8px 14px;
+  background: #bbf7d0;
+  border-radius: 8px;
+  margin: 0 6px;
+}
+
+.cp-code {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 14px;
+  border-radius: 10px;
+  overflow-x: auto;
+}

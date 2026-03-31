@@ -1,0 +1,75 @@
+.c-unit2-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+.c-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.c-tabs button {
+  flex: 1;
+  min-width: 140px;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c-content {
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.c-list {
+  margin-left: 20px;
+}
+
+.c-flow {
+  margin-top: 12px;
+  padding: 12px;
+  background: #dbeafe;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.c-code {
+  background: #020617;
+  color: #e5e7eb;
+  padding: 14px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.c-note {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.c-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.c-table th,
+.c-table td {
+  border: 1px solid #cbd5f5;
+  padding: 10px;
+  text-align: center;
+}
+
+.keyword-box {
+  background: #e0e7ff;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}

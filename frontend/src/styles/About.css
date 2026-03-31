@@ -1,0 +1,125 @@
+.about-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #f3e8ff, #ffffff);
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: slideDown 1.2s ease;
+}
+
+.about-header h1 {
+  color: #4b0082;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.about-content {
+  flex: 1 1 45%;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: default;
+}
+
+.about-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(75, 0, 130, 0.2);
+}
+
+.about-content h2 {
+  color: #4b0082;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.cards-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cards-section h2 {
+  color: #4b0082;
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  width: 250px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: #f8f1ff;
+}
+
+.card h3 {
+  color: #4b0082;
+  margin-bottom: 0.5rem;
+}
+
+.about-footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex: 1 1 100%;
+  }
+  .card {
+    width: 90%;
+  }
+}

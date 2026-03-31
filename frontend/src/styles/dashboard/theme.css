@@ -1,0 +1,14 @@
+:root {
+  --bg-main: #f9fbff;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --primary: #2563eb;
+}
+
+/* 🌙 Dark Mode */
+[data-theme="dark"] {
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #e5e7eb;
+  --primary: #38bdf8;
+}

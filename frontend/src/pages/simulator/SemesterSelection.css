@@ -1,0 +1,24 @@
+.selection-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.select-card {
+  background-color: #f0f0f0;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.select-card:hover {
+  background-color: #dcdcdc;
+  transform: scale(1.05);
+}

@@ -1,0 +1,95 @@
+.equivalence-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #f0fdf4, #ecfeff);
+  text-align: center;
+}
+
+.equivalence-page h1 {
+  font-size: 32px;
+  color: #064e3b;
+}
+
+.subtitle {
+  color: #475569;
+  margin-top: 6px;
+}
+
+/* Inputs */
+.input-section {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input-section input {
+  width: 320px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #94a3b8;
+  font-size: 14px;
+}
+
+/* Button */
+.check-btn {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.check-btn:hover {
+  background-color: #15803d;
+  transform: scale(1.05);
+}
+
+/* Result Card */
+.result-card {
+  margin-top: 35px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Status */
+.status {
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.status.yes {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status.no {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Final Result */
+.final-result {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.final-result.valid {
+  color: #15803d;
+}
+
+.final-result.invalid {
+  color: #b91c1c;
+}

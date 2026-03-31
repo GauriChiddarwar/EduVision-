@@ -1,0 +1,22 @@
+.dashboard-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.dashboard-card {
+  background: #f0fdf4;
+  border-left: 6px solid #22c55e;
+  padding: 25px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  background: #dcfce7;
+  transform: translateY(-5px);
+}

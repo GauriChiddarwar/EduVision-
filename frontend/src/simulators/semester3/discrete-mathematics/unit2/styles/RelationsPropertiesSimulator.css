@@ -1,0 +1,94 @@
+.relation-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #ecfeff, #f0f9ff);
+  text-align: center;
+}
+
+.relation-page h1 {
+  font-size: 32px;
+  color: #0f172a;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #475569;
+}
+
+/* Inputs */
+.input-box {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input-box input {
+  width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #94a3b8;
+  font-size: 14px;
+}
+
+/* Button */
+.check-btn {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.check-btn:hover {
+  background-color: #0369a1;
+  transform: scale(1.05);
+}
+
+/* Result */
+.result-card {
+  margin-top: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.property {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.property.true {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.property.false {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .relation-page h1 {
+    font-size: 26px;
+  }
+
+  .input-box input {
+    width: 100%;
+    max-width: 320px;
+  }
+}

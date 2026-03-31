@@ -1,0 +1,11 @@
+.simulator-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.simulator-content {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+}

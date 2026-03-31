@@ -1,0 +1,49 @@
+.unit1-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.topic-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.topic-buttons button {
+  flex: 1;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.topic-buttons button:hover {
+  background: #1e40af;
+}
+
+.simulator-box {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.result-box {
+  margin-top: 15px;
+  padding: 12px;
+  background: #e0f2fe;
+  border-left: 4px solid #0284c7;
+  font-weight: bold;
+}
+
+.formula-box {
+  background: #fef3c7;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  font-weight: bold;
+}

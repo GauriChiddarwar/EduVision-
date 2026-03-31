@@ -1,0 +1,73 @@
+.selection-page {
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #d9e2ff);
+  min-height: 100vh;
+}
+
+.selection-page h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0d47a1;
+  letter-spacing: 1px;
+  animation: fadeInDown 0.8s ease forwards;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Individual card */
+.select-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  padding: 1.5rem 1rem;
+  width: 180px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  font-weight: 600;
+  color: #0d47a1;
+  position: relative;
+  overflow: hidden;
+}
+
+.select-card::before {
+  content: '';
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: -100%;
+  left: -100%;
+  background: linear-gradient(45deg, rgba(13,71,161,0.1), rgba(13,71,161,0.3), rgba(13,71,161,0.1));
+  transition: all 0.5s ease;
+  transform: rotate(45deg);
+}
+
+.select-card:hover::before {
+  top: -30%;
+  left: -30%;
+}
+
+.select-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  background: #e3f2fd;
+}
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

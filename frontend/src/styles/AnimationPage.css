@@ -1,0 +1,164 @@
+/* 🎨 Background with animated gradient */
+.animation-page {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #e0f7fa, #f3e5f5, #fffde7, #c8e6c9);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🧭 Navbar */
+.animation-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4b0082;
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.animation-navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+.animation-navbar .logo:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #fff;
+}
+
+/* 🔙 Back Button */
+.go-back-btn {
+  background-color: #fff;
+  color: #4b0082;
+  border: none;
+  padding: 0.6rem 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.go-back-btn:hover {
+  background-color: #f3f0ff;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 5px 10px rgba(75, 0, 130, 0.3);
+}
+
+/* 📦 Main Container */
+.animation-container {
+  max-width: 1000px;
+  margin: 2.5rem auto;
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(75, 0, 130, 0.25);
+  text-align: center;
+  animation: fadeIn 1s ease;
+  backdrop-filter: blur(8px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.animation-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(75, 0, 130, 0.35);
+}
+
+/* 📝 Titles */
+.animated-title {
+  color: #4b0082;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: floatText 2s ease-in-out infinite alternate;
+  letter-spacing: 0.5px;
+}
+
+.path-text {
+  color: #444;
+  margin-bottom: 2rem;
+  font-style: italic;
+  letter-spacing: 0.6px;
+  transition: color 0.3s ease;
+}
+
+.path-text:hover {
+  color: #6a1b9a;
+}
+
+/* 🎬 Video Wrapper */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(75, 0, 130, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-wrapper:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(75, 0, 130, 0.5);
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: filter 0.4s ease;
+}
+
+/* Glow effect on hover */
+.video-wrapper video:hover {
+  filter: brightness(1.05) drop-shadow(0 0 10px rgba(75, 0, 130, 0.3));
+}
+
+/* 🕹️ Video Tip */
+.video-tip {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #4b0082;
+  font-weight: 500;
+  animation: fadeIn 2s ease;
+}
+
+/* 🌈 Animations */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes floatText {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .animation-container {
+    padding: 1.5rem;
+  }
+  .animated-title {
+    font-size: 1.9rem;
+  }
+}

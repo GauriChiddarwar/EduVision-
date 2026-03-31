@@ -1,0 +1,88 @@
+/* Main Page */
+.interview-page {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header Section */
+.interview-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.interview-header h2 {
+  font-size: 28px;
+  color: #2d2d2d;
+}
+
+.interview-header p {
+  font-size: 15px;
+  color: #666;
+}
+
+/* Back Button */
+.back-btn {
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 6px 14px;
+  background-color: #2d6cdf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #1f4db8;
+}
+
+/* Card Layout */
+.dashboard-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styling */
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dashboard-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.dashboard-card p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* Hover Effect */
+.dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .interview-header h2 {
+    font-size: 22px;
+  }
+
+  .dashboard-card {
+    padding: 20px;
+  }
+}

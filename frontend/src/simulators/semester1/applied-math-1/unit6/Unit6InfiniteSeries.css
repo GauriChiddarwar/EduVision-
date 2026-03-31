@@ -1,0 +1,50 @@
+.unit6-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+.unit6-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.unit6-tabs button {
+  flex: 1;
+  min-width: 160px;
+  padding: 14px;
+  background: linear-gradient(135deg, #0ea5e9, #0369a1);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.unit6-content {
+  background: #f8fafc;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.formula-box {
+  background: #e0f2fe;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 14px 0;
+}
+
+.result-box {
+  background: #ecfeff;
+  padding: 14px;
+  border-left: 6px solid #06b6d4;
+}
+
+.example {
+  margin-top: 10px;
+  font-style: italic;
+}

@@ -1,0 +1,26 @@
+.dashboard-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.dashboard-card {
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  padding: 28px;
+  border-radius: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #1e3a8a;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #bfdbfe, #dbeafe);
+}

@@ -1,0 +1,40 @@
+.cc-container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 24px;
+}
+
+.cc-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.cc-tabs button {
+  flex: 1;
+  min-width: 160px;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #16a34a, #166534);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cc-content {
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.cc-code {
+  background: #020617;
+  color: #e5e7eb;
+  padding: 14px;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
